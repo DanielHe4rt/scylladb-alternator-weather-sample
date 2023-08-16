@@ -24,9 +24,9 @@ This example how ScyllaDB Alternator works with an Weather Forecast modeling sam
 | São Paulo      | 2023-08-14 18:00:00 | {"min": 28.5, "max": 31.5: "avg: 123} | 70  | Raining            |
 | Rio de Janeiro | 2023-08-14 12:00:00 | {"min": 28.5, "max": 31.5: "avg: 123} | 58  | Sunny              |
 
-3. **Operações Possíveis:**
+3. **Possible Operations:**
 
-    - Inserir novos dados de clima para uma cidade e uma determinada data.
-    - Atualizar informações de clima existentes, como temperatura, umidade ou condições climáticas.
-    - Consultar informações de clima para uma cidade específica em uma determinada data ou período.
-    - Excluir dados de clima para uma cidade e uma determinada data.
+    - Insert new forecast data of a city on a specific date;
+    - Update a specific forecast data by city and date;
+    - Search information based on a specific city or date;
+    - Delete information of a entire city.
