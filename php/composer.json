@@ -1,0 +1,22 @@
+{
+  "name": "danielhe4rt/scylladb-alternator-weather-sample",
+  "description": "A simple Weather fetch using ScyllaDB though DynamoDB",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "danielhe4rt",
+      "email": "hey@danielheart.dev"
+    }
+  ],
+  "require": {
+    "aws/aws-sdk-php": "^3.278",
+    "ext-curl": "*",
+    "ext-simplexml": "*",
+    "guzzlehttp/guzzle": "^7.7"
+  }
+}
