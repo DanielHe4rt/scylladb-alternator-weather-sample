@@ -63,4 +63,14 @@ class WeatherRepository
         return $response['Items'];
 
     }
+
+    public function delete(string $cityName): void
+    {
+        $this->client->deleteItem([
+            'TableName' => Migration::$tableName,
+            'Key' => [
+                'city_name' => ['S' => $cityName]
+            ]
+        ]);
+    }
 }

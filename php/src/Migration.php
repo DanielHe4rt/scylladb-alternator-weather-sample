@@ -42,7 +42,6 @@ class Migration
                 ['AttributeName' => 'temperature', 'AttributeType' => 'M'],
                 ['AttributeName' => 'ivu', 'AttributeType' => 'N'],
                 ['AttributeName' => 'climate_conditions', 'AttributeType' => 'S'],
-
             ],
             'ProvisionedThroughput' => [
                 'ReadCapacityUnits' => 10,

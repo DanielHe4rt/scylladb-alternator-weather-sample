@@ -2,6 +2,14 @@
 
 This example how ScyllaDB Alternator works with an Weather Forecast modeling sample.
 
+To run ScyllaDB with the Alternator, use the command below: 
+
+```shell
+docker run --name scylla-alternator -d -p 8000:8000 scylladb/scylla:latest --alternator-port=8000 --alternator-write-isolation=always
+```
+
+After that you can send request to `http://localhost:8000` and it will be recognized as DynamoDB to ScyllaDB requests.
+
 1. **DynamoDB Table:**
    Let's create a table called "forecast" to store data regarding the weather in some Brazilian capitals.  
    We're going to use the 'city name' as the Partition Key and the forecast date as Sort/Clustering Key.
@@ -13,7 +21,7 @@ This example how ScyllaDB Alternator works with an Weather Forecast modeling sam
         - uvi (Ultra Violet Index) - Int
         - climate_conditions - String
 
-2. **Exemplo de Dados:**
+2. **Data Sample:**
 
    Vamos supor que queiramos armazenar informações de clima para as cidades de "São Paulo" e "Rio de Janeiro". Aqui está
    um exemplo de como os dados poderiam ser armazenados na tabela:

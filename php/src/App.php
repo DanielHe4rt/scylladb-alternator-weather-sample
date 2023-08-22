@@ -5,6 +5,7 @@ namespace App;
 use App\Commands\CommandException;
 use App\Commands\CommandInterface;
 use App\Commands\CommandResponseEnum;
+use App\Commands\DeleteByCityCommand;
 use App\Commands\FindForecastByCityCommand;
 use App\Commands\PopulateByCapitalsCommand;
 use App\Integrations\IntegrationException;
@@ -48,6 +49,7 @@ class App
         return match ($commandName) {
             '!populate' => new PopulateByCapitalsCommand(),
             '!lookup' => new FindForecastByCityCommand(),
+            '!delete' => new DeleteByCityCommand(),
             default => throw CommandException::notImplemented($commandName)
         };
     }
