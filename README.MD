@@ -8,7 +8,7 @@ To run ScyllaDB with the Alternator, use the command below:
 docker run --name scylla-alternator -d -p 8000:8000 scylladb/scylla:latest --alternator-port=8000 --alternator-write-isolation=always
 ```
 
-After that you can send request to `http://localhost:8000` and it will be recognized as DynamoDB to ScyllaDB requests.
+After that you can send HTTP request to `http://localhost:8000` and it will be recognized as DynamoDB to ScyllaDB requests.
 
 1. **DynamoDB Table:**
    Let's create a table called "forecast" to store data regarding the weather in some Brazilian capitals.  
